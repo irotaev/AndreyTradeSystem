@@ -1,0 +1,11 @@
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\Data.dll
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\Data.pdb
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\FluentNHibernate.dll
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\Iesi.Collections.dll
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\NHibernate.dll
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\FluentNHibernate.xml
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\Iesi.Collections.xml
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\bin\Debug\NHibernate.xml
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\obj\Debug\Data.dll
+F:\Projects\AndreyTradingSystem\AndreyTradeProject\Data\obj\Debug\Data.pdb

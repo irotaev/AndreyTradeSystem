@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
+
+  <link href="~/Content/Stylesheets/main.css" rel="stylesheet" />
+  <link href="~/Content/Stylesheets/slider.css" rel="stylesheet" />
+  <link href="~/Content/Stylesheets/menu-bottom.css" rel="stylesheet" />
+  
+  <meta name="description" content="CSS Slider">
+  <title>CSS Slider</title>
+</head>
+
+<body>
+  <div class="container-div">
+    <ul class="nav">
+      <li class="main-menu">
+        <a href="@Url.Action("Index", "Home")" title="Главная страница">Главная страница</a>
+      </li>
+      <li class="settings">
+        <a href="@Url.Action("Index", "Stock")" title="Акции дня">Акция дня</a>
+      </li>
+      <li class="link">
+        <a href="@Url.Action("Index", "AboutCompany")" title="О компании">О компании</a>
+      </li>
+      <li class="search">
+        <a id="karz" href="@Url.Action("Browse", "TradeBasket")" title="Корзина">Карзина</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Слайдер !!!!!!!!!!!!!!!!!!!! -->
+  
+  @RenderBody()
+
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>-->
+
+  <div class="contact">
+    <p class="p p1">Версия от 26.07.2014.</p>
+    <p class="p p2">Компания ООО "Люцида".</p>
+    <p class="p p3">Номер телефона: 8-825-128-90-44.</p>
+  </div>
+
+  <script src="C:/Users/Андрюха/Desktop/Урок/jquery-2.1.1.min.js"></script>
+  <script>
+    $(function () {
+      $.each($("input[type='radio']"), function (index, el) {
+        $(el)
+      });
+
+      var $firstEl = $("input[type='radio']").first();
+
+      var animateNextEl = function ($currentEl) {
+        if ($currentEl === undefined)
+          return;
+
+        var $prevEl = $currentEl.prev("input");
+
+        if ($prevEl.length > 0)
+          $prevEl.removeAttr("checked");
+
+        $currentEl.attr("checked", "checked");
+        var $nextEl = $currentEl.next("input");
+
+        if ($nextEl.length == 0) {
+          $currentEl.removeAttr("checked");
+          $nextEl = $firstEl;
+        }
+
+        setTimeout(animateNextEl, 1000, $nextEl);
+      };
+
+      setTimeout(animateNextEl, 1000, $firstEl);
+    });
+  </script>
+</body>
+<!-- Слайдер !!!!!!!!!!!!!!!!!!!! -->
+</html>

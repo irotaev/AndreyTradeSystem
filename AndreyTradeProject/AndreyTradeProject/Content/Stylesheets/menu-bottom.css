@@ -1,0 +1,30 @@
+.contact {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: "PT Sans", Tahoma, Arial;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #272222;
+  border-top: 3px solid #0a0a0a;
+  height: 60px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  text-transform: initial;
+}
+
+.p {
+  margin-left: 20px;
+  color: wheat;
+}
+
+
+.p2, .p3 {
+  float: left;
+}
+
+.p1 {
+  margin-right: 20px;
+  float: right;
+}

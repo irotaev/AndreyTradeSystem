@@ -1,0 +1,15 @@
+﻿@model AndreyTradeProject.Models.UserModel
+
+@{
+  ViewBag.Title = "Авторизация";
+  Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="b-au">
+  @using (Html.BeginForm())
+  {
+    @Html.EditorForModel()
+    
+    <input type="submit" value="Отправить" />
+  }
+</div><!--B: Autorization-->

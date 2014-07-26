@@ -1,0 +1,13 @@
+﻿@{
+  ViewBag.Title = "Import";
+  Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="b-exi">
+  @using (Html.BeginForm("Import", "Excel", FormMethod.Post, new { enctype = "multipart/form-data" }))
+  {
+    <input type="file" name="excelFile" />
+    
+    <input type="submit" value="Go!" />
+  }
+</div><!--B: Excel import-->
